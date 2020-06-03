@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: #232323;
+    font-family: "Montserrat", "Avenir";
 }
 
 .square {
@@ -8,24 +17,63 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 10%;
+    transition: background 0.5s;
 }
 
 #container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 h1 {
+    text-align: center;
     color: white;
+    background: steelblue;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
 }
 
-span {
-    color: #fff;
+#colorDisplay {
+    font-size: 200%;
 }
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+/* span {
+    color: #fff;
+} */
 
 #stripe {
     background-color: #fff;
     height: 30px;
     text-align: center;
     color: #000;
+}
+
+.selected {
+    color: #fff;
+    background: steelblue;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.4s;
+    outline: none;
+}
+
+button:hover {
+    color: #fff;
+    background: steelblue;
 }
